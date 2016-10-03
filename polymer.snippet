@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Inserts a polymer element</Title>
+      <Shortcut>polymer</Shortcut>
+      <Description>Inserts a test method.</Description>
+      <Author>Don Archer</Author>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Replace with the name of the test method.</ToolTip>
+          <Default>my-element</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="HTML" Kind="method body">
+        <![CDATA[<link rel="import" href="../polymer/polymer.html"/>
+<dom-module id="$name$">
+    <template>
+    </template>
+    <script>
+        Polymer({
+            is: "$name$"
+        });
+    </script>
+</dom-module>
+        ]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
