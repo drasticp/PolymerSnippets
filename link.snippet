@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Polymer Link</Title>
+      <Shortcut>link</Shortcut>
+      <Description>Inserts a polymer link tag</Description>
+      <Author>Don Archer</Author>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Replace with the name of the element.</ToolTip>
+          <Default>my-element</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="HTML" Kind="method body">
+        <![CDATA[<link rel="import" href="../$name$/$name$.html"/>]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
